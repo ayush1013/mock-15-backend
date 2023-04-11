@@ -27,7 +27,7 @@ app.get("/trips", async(req, res) => {
     }
 })
 
-app.post("/addtrip", async(req, res) => {
+app.post("/trips", async(req, res) => {
     const data = req.body
     try{
         const trip = new TripModel(data);
